@@ -10,7 +10,6 @@ public class Course {
         this.title = title;
         this.description = description;
     }
-
     public long getId() {
         return id;
     }
