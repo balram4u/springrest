@@ -11,14 +11,29 @@ public class CourseServiceImpl  implements CourseService {
     List<Course> list;
   public CourseServiceImpl()
   {
-     list=new ArrayList<>();
+      list=new ArrayList<>();
       list.add(new Course(145,"selenium","this is selenium course"));
       list.add(new Course(146,"java","this is java course"));
-
-
+      list.add(new Course(147,"python","this is python course"));
   }
     @Override
     public List<Course> getCourses() {
         return list;
     }
+
+    @Override
+    public Course getCourse(long courseID) {
+      Course c=null;
+      for(Course course:list)
+      {
+          if(course.getId()==courseID)
+          {
+              c=course;
+              break;
+
+          }
+      }
+        return c;
+    }
+
 }
