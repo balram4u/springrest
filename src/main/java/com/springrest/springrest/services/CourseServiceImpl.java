@@ -14,9 +14,9 @@ public class CourseServiceImpl  implements CourseService {
   public CourseServiceImpl()
   {
       list=new ArrayList<>();
-      list.add(new Course(145,"selenium","this is selenium course"));
-      list.add(new Course(146,"java","this is java course"));
-      list.add(new Course(147,"python","this is python course"));
+      list.add(new Course(145,"selenium","This is selenium course"));
+      list.add(new Course(146,"java","This is java course"));
+      list.add(new Course(147,"python","This is python course"));
   }
     @Override
     public List<Course> getCourses() {
